@@ -1,19 +1,17 @@
-package practice_JavaOOP.task1;
+package practice_JavaOOP.task4;
 
 public class Main {
     static void main(String[] args) {
-        Zoo zoo = new Zoo();
+        Aquarium aquarium = new Aquarium();
 
-        Elephant elle = new Elephant();
+        Starfish starfish = new Starfish();
+        aquarium.setSeaCreature(starfish);
+        aquarium.makeMove();
+        aquarium.deleteSeaCreature();
 
-        zoo.addAnimal(elle);
-        zoo.forceMakeMove();
-        zoo.forceMakeSound();
-        zoo.deleteAnimal();
-
-        Bird sparrow = new Bird();
-        zoo.addAnimal(sparrow);
-        zoo.forceMakeSound();
-        zoo.forceMakeMove();
+        Shark shark1 = new Shark();
+        aquarium.setSeaCreature(shark1);
+        aquarium.makeMove();
+        aquarium.deleteSeaCreature();
     }
 }
